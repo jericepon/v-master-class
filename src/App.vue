@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useProjectStore } from '@/store';
+// import { useProjectStore } from '@/store';
+import { supabase } from '@/lib/supabaseClient';
+// const projectStore = useProjectStore();
 
-const projectStore = useProjectStore();
-
-console.log(projectStore.loading);
+console.log(supabase);
 </script>
 
 <template>

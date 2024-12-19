@@ -3,7 +3,16 @@
 import { supabase } from '@/lib/supabaseClient';
 // const projectStore = useProjectStore();
 
-console.log(supabase);
+; (async () => {
+  const { data, error } = await supabase.from('projects').select('*');
+  if (error)
+  {
+    console.error(error);
+  } else
+  {
+    console.log(data);
+  }
+})();
 </script>
 
 <template>

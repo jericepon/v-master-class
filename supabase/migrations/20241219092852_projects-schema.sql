@@ -12,4 +12,4 @@ create table projects (
     collaborators text[] default '{}'::text[] not null
 );
 
-insert into projects (name, slug) values ('project-one', 'project-one');
+-- insert into projects (name, slug) values ('project-one', 'project-one');
